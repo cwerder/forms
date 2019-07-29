@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="form-handler.js"></script>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';** ">
+    </head>
+    <body>
+        <form id="form" action="http://localhost:3000" method="get">
+            <label for="fn">First Name:</label>
+            <span>Enter first name: </span>
+            <input id="fn" type="text" name="firstName" value="carl"><br>
+            <label for="ln">Last Name:</label>
+            <span>Enter last name: </span>
+            <input id="ln" type="text" name="lastName"><br>
+            <div>
+                <select name="gender">
+                    <option>boy</option>
+                    <option>girl</option>
+                </select>
+            </div>
+            <input type="submit">
+            <!-- <button onclick="blong()">BUTTON</button> -->
+        </form>
+    </body>
+</html>
