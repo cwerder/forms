@@ -4,7 +4,7 @@
 
 var express = require('express');
 var cors = require('cors')
-// var bodyParser = require('body-parser')
+var bodyParser = require('body-parser')
 let app = express();
 
 // Create an instance of the http server to handle HTTP requests
@@ -21,13 +21,18 @@ let app = express();
 // })
 
 app.use(cors());
-// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
-// app.use(bodyParser.json())
+app.use(bodyParser.json())
 
 app.get('/', (req, res) =>  {
-	console.log('it worked!');
+	console.log('get worked!');
 	res.send(req.query);
+})
+
+app.post('/', (req, res) =>  {
+	console.log('post worked!');
+	res.send(req.body);
 })
 
 // Start the server on port 3000

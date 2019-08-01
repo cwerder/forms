@@ -11,10 +11,6 @@
 //     //     }
 //     // })
 
-//     // function blong() {
-//     //     console.log('cray')
-//     // }
-
 //     form.addEventListener("submit", (e) => {
 //         formData = new FormData(form);
 //         // for (name in form.)
